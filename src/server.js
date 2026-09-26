@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     res.json({
-        message: "Server optimized for millions of requests"
+        message: "API is ready to handle high traffic"
     });
 });
 
