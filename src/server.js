@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     res.json({
-        message: "Million Request API is running"
+        message: "Server optimized for millions of requests"
     });
 });
 
