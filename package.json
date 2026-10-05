@@ -1,0 +1,36 @@
+{
+  "name": "million-requests-api",
+  "version": "1.0.0",
+  "description": "A Node.js / Express API built to handle very high traffic: multi-process clustering, shared data store, rate limiting, graceful shutdown, load tests and scale-out config.",
+  "main": "src/cluster.js",
+  "scripts": {
+    "start": "node src/cluster.js",
+    "dev": "node src/server.js",
+    "test": "node --test",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshikaGarg787/million-request-api.git"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "cluster",
+    "scalability",
+    "high-traffic"
+  ],
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.4"
+  },
+  "devDependencies": {
+    "autocannon": "^8.0.0"
+  }
+}
